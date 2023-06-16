@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Buy Books</title> 
+ 
+    <link rel="shortcut icon" href="./img/favi-logo.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/navbar.css"> 
+    <link rel="stylesheet" href="./css/buy_form.css"> 
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap" rel="stylesheet">
+ 
+ 
+</head> 
+<body> 
+    <div class = "page3"> 
+        <navbar> 
+            <div class="navbar"> 
+                <img src="./img/logo.png" alt="Logo" class="logo"> 
+                <ul> 
+                    <li><a href="./index.html">Home</a></li> 
+                    <li><a href="./buy_form.html" target="_blank">Buy Books</a></li>
+                <li><a href="./sell_form.html" target="_blank">Sell Books</a></li>
+                    <li><a href="">About Us</a></li> 
+                    <li><a href="" target="_blank">Contact Us</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul> 
+            </div> 
+        </navbar> 
+ 
+        <div class="form"> 
+            <form action=""> 
+                <h1 class="form_heading">Buy Books</h1> 
+                <hr> 
+                <h2 class = "heading">About you</h2> 
+                <p>Name <input type="text" name="name" id="name" placeholder="Enter your Name" required></p> 
+                <p>Contact Number <input type="number" name="phone" id="phone" required placeholder="1234567890"></p> 
+                <p>Email <input type="email" name="email" id="email" required placeholder="Enter your email id"></p> 
+                <p>Address <input type="text" name="address" id="address" required placeholder="Your address"></p> 
+ 
+                <hr> 
+                 
+                <h2 class = "heading">About The Book</h2> 
+                <p>Name of the book <input type="text" name="bookName" id="bookName" placeholder="What are you looking for..."></p> 
+                <p>Author/Publication<input type="text" name="author" id="author" ></p> 
+                 
+                <p>Book Language  
+                    <select name="Language" id="language"> 
+                        <option value="">--Select Language--</option> 
+                        <option value="english">English</option> 
+                        <option value="hindi">Hindi</option> 
+                        <option value="bengali">Bengali</option> 
+                    </select> 
+                </p> 
+                <p class="bookType"> 
+                    Book type 
+                    <select name="bookType" id="bookType" place> 
+                        <option value="">--Select Type--</option> 
+                        <option value="Novels">Novels</option> 
+                        <option value="Engineering">Engineering</option> 
+                        <option value="Exam-prep">Exam Preparation</option> 
+                        <option value="Magazine">Magazine</option> 
+                        <option value="School">School Books</option> 
+                    </select> 
+                </p> 
+                 
+                 
+            </form> 
+        </div> 
+    </div> 
+</body> 
+</html>

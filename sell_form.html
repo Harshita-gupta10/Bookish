@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sell Books</title> 
+ 
+    <link rel="shortcut icon" href="./img/favi-logo.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/navbar.css"> 
+    <link rel="stylesheet" href="./css/sell_form.css"> 
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap" rel="stylesheet">
+ 
+ 
+</head> 
+<body> 
+    <div class = "page2"> 
+        <navbar> 
+            <div class="navbar"> 
+                <img src="./img/logo.png" alt="Logo" class="logo"> 
+                <ul> 
+                    <li><a href="./index.html">Home</a></li> 
+                    <li><a href="./buy_form.html" target="_blank">Buy Books</a></li>
+                <li><a href="./sell_form.html" target="_blank">Sell Books</a></li> 
+                    <li><a href="">About Us</a></li> 
+                    <li><a href="" target="_blank">Contact Us</a></li>
+                    <li><a href="./login.html">Login</a></li> 
+                </ul> 
+            </div> 
+        </navbar> 
+ 
+        <div class="form"> 
+            <form action=""> 
+                <h1 class="form_heading">Sell Your Books</h1> 
+                <hr> 
+                <h2 class = "heading">About you</h2> 
+                <p>Name <input type="text" name="name" id="name" placeholder="Enter your Name" required></p> 
+                <p>Contact Number <input type="number" name="phone" id="phone" required placeholder="9631748563"></p> 
+                <p>Email <input type="email" name="email" id="email" required placeholder="Enter your email id"></p> 
+                <p>Address <input type="text" name="address" id="address" required placeholder="Your address"></p> 
+ 
+                <hr> 
+                 
+                <h2 class = "heading">About The Book</h2> 
+                <p>Name of the book <input type="text" name="bookName" id="bookName" placeholder="Enter the name of your book"></p> 
+                <p>Author <input type="text" name="author" id="author" required></p> 
+                <p>Publication <input type="text" name="publication" id="publication" required></p> 
+                <p>Book Language <input type="text" name="" id="" required></p> 
+                <p>Date of buying <input type="date" name="" id=""></p> 
+                 
+                <p class="condition">Condition 
+                    <select name="Condition" id="Condition" required> 
+                        <option value="">Select condition</option> 
+                        <option value="just-bought">Just bought</option> 
+                        <option value="new">New</option> 
+                        <option value="old">Old</option> 
+                    </select> 
+                </p> 
+ 
+                <fieldset> 
+                    <legend class="text_legend">Torn or not</legend> 
+                    <p class="torn"> 
+                         
+                        Not Torn   <input type="radio" name="torn" id="NotTorn"><br> 
+                        Cover Torn <input type="radio" name="torn" id="coverTorn"> <br> 
+                        Pages Torn <input type="radio" name="torn" id="PageTorn"> 
+                    </p> 
+                </fieldset> 
+                <br>
+                 
+                <fieldset> 
+                    <legend class="text_legend">Upload image</legend> 
+ 
+                    <p class = "imgUpload">Upload cover page <tr><input type="file" name="coverpage" id="img"></p>
+                    <p class = "imgUpload">Upload back image <tr><input type="file" name="backpage" id="img"></p> 
+ 
+                    <p class = "imgUpload">Upload side image <tr><input type="file" name="sideimg" id="img"></p> 
+ 
+                </fieldset> 
+                
+            </form> 
+        </div> 
+    </div> 
+</body> 
