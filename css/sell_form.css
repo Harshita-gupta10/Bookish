@@ -1,65 +1,126 @@
-* 
-{ 
-    margin: 0; 
-    padding: 0; 
-     
-} 
- 
-body
-{ 
-    background: url(../img/sell_form.jpg);
-      
-    background: cover; 
-    width: 100%; 
-    height: 100%; 
-    background-size: cover; 
-    background-position: center; 
- 
-} 
- 
- 
-.form{ 
-    padding: 25px; 
-    margin: 25px; 
-    margin-left: 20%; 
-    margin-right: 40%; 
-    border: rgb(0, 0, 0) 3px solid; 
-    border-radius: 20px; 
-    display: flex; 
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-     
-} 
-.heading 
-{ 
-    padding: 20px;
-    font-weight: 800;
- 
-} 
-p 
-{ 
-    padding: 10px; 
-    font-size: 20px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
- 
-} 
-input[type="text"], 
-        input[type="email"], 
-        input[type="number"], 
-        input[type="date"], 
-        select, 
-        textarea { 
-            width: 100%; 
-            padding: 10px; 
-            border: 1px solid #d7bebe; 
-            margin: 5px; 
-        } 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/sell_form.jpg);
+
+  background: cover;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  padding: 25px;
+  margin: 25px;
+  margin-left: 20%;
+  margin-right: 40%;
+  border: rgb(0, 0, 0) 3px solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+.heading {
+  padding: 20px;
+  font-weight: 800;
+}
+p {
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d7bebe;
+  margin: 5px;
+}
 
 .form_heading {
-    font-family: 'Josefin Sans', sans-serif;
-    
+  font-family: "Josefin Sans", sans-serif;
 }
-.imgUpload, .torn
-{
-    color: white;
+.imgUpload,
+.torn {
+  color: white;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  max-width: 800px;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #04aa6d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #04aa6d;
+}
+
+.book_details_div {
+  display: grid;
+  grid-template-columns: 40% 30% 20%;
+  column-gap: 3%;
 }
