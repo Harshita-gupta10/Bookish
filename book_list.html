@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookWorm</title>
+
+    <link rel="shortcut icon" href="./img/favi-logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/book_list.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+        <navbar>
+            <div class="navbar">
+                <img src="./img/logo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./book_list.html" target="_blank">Buy Books</a></li>
+                    <li><a href="./sell_form.html" target="_blank">Sell Books</a></li>
+                    <li><a href="">About Me</a></li>
+                    <li><a href="" target="_blank">Contact Us</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+        </navbar>
+      <section>
+        <h1 class="book_list_header">Action</h1>
+        <div class="book_list_grid" id="book_list_grid">
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="data:image/jpeg;base64,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"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>The Hunger Games</h2>
+              <p>400/-</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://m.media-amazon.com/images/I/41nQI7+Es1L._SY445_SX342_.jpg"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>Dracula</h2>
+              <p>150/-</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://m.media-amazon.com/images/I/41GSCJv63QL._SY445_SX342_.jpg"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>Fahrenheit 451</h2>
+              <p>500/-</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://m.media-amazon.com/images/I/514-CrZmIJL._SY445_SX342_.jpg"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>Harry Potter and the Philosopher's Stone</h2>
+              <p>284/-</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="book_list_header">Book List</h1>
+        <div class="book_list_grid" id="book_list_grid">
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://img.bookchor.com/images/cover/589/9781408855669.jpg"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>Harry Potter and the Chamber of Secret</h2>
+              <p>220/-</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://img.bookchor.com/images/cover/bc/9780143458289_16625505590.jpg"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>Samsara:Enter the Valley of the Gods</h2>
+              <p>150/-</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://img.bookchor.com/images/cover/bc/9781310394172.JPG"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>The Art of War</h2>
+              <p>350/-</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./buy_form.html"><img
+              src="https://m.media-amazon.com/images/I/716eT7oSHnL._SY466_.jpg"
+              alt="Book Image"
+            /></a>
+            <div class="details">
+              <h2>The Cruel Prince (The Folk of the Air) Paperback</h2>
+              <p>300/*</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </body>
+</html>
